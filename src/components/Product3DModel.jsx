@@ -26,9 +26,11 @@ export default function Product3DModel({ modelPath = "/dress.glb", className = "
              <Model url={modelPath} />
           </Stage>
           <OrbitControls 
+            makeDefault
             enablePan={true} 
             enableZoom={true} 
             autoRotate={false}
+            screenSpacePanning={true}
           />
           <ContactShadows 
             position={[0, -0.8, 0]} 

@@ -85,7 +85,7 @@ export default function ProductPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="flex-1 pb-16 md:pb-0">
+      <main className="flex-1 pb-16 md:pb-0 relative z-10">
         <div className="max-w-screen-2xl mx-auto">
           <div className="md:grid md:grid-cols-2 lg:grid-cols-[1fr_480px] gap-0">
             <div className="relative">
@@ -224,7 +224,7 @@ export default function ProductPage() {
                 </button>
                 <button
                   onClick={handleTryOn}
-                  className="flex-1 border border-zinc-300 py-4 text-xs tracking-widest uppercase hover:border-black transition-colors flex items-center justify-center gap-2"
+                  className="flex-1 relative z-10 border border-zinc-300 py-4 text-xs tracking-widest uppercase hover:border-black transition-colors flex items-center justify-center gap-2 touch-manipulation active:scale-[0.98]"
                 >
                   <Scan size={16} /> TRY ON
                 </button>

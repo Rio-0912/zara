@@ -66,7 +66,7 @@ function ARTryOnContent() {
   };
 
   return (
-    <div className="fixed inset-0 bg-white flex flex-col z-50">
+    <div className="fixed inset-0 bg-white flex flex-col z-[200]">
       {/* Camera Feed Area */}
       <div className="relative flex-1 bg-[#1A1A1A] overflow-hidden">
         {/* Header overlays */}

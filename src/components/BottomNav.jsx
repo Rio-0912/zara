@@ -13,12 +13,12 @@ const tabs = [
 
 export default function BottomNav({ active = "HOME" }) {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-zinc-100 flex md:hidden">
+    <nav className="fixed bottom-0 left-0 right-0 z-[100] bg-white border-t border-zinc-100 flex md:hidden pb-safe">
       {tabs.map(({ label, href, Icon }) => (
         <Link
           key={label}
           href={href}
-          className={`flex-1 flex flex-col items-center justify-center py-2.5 gap-1 transition-colors ${
+          className={`flex-1 flex flex-col items-center justify-center py-2.5 gap-1 transition-colors pointer-events-auto touch-manipulation ${
             active === label ? "text-black" : "text-zinc-400 hover:text-zinc-600"
           }`}
         >
