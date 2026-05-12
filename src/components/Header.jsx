@@ -28,7 +28,7 @@ export default function Header() {
             href="/"
             className="absolute left-1/2 -translate-x-1/2 text-xl font-light tracking-[0.35em] uppercase select-none"
           >
-            ZARA user 1 & user 2 
+            ZARA i bag
           </Link>
 
           <div className="flex items-center gap-1">
